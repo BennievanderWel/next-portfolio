@@ -1,13 +1,9 @@
-import Link from 'next/link';
+import Layout from '../components/Layout';
 
 export default () => {
   return (
-    <div>
-      <h1>Home</h1>
-      <Link href='/about'>
-        <a>About</a>
-      </Link>
+    <Layout title='Home'>
       <p>Hello world!</p>
-    </div>
+    </Layout>
   );
 };
