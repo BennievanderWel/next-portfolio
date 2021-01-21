@@ -7,7 +7,7 @@ Router.onRouteChangeStart = () => NProgress.start();
 Router.onRouteChangeComplete = () => NProgress.done();
 Router.onRouteChangeError = () => NProgress.done();
 
-export default ({ children, title }) => {
+const Layout = ({ children, title }) => {
   return (
     <div className='root'>
       <Head>
@@ -22,6 +22,9 @@ export default ({ children, title }) => {
         </Link>
         <Link href='/hireme'>
           <a>Hire me</a>
+        </Link>
+        <Link href='/blog'>
+          <a>Blog</a>
         </Link>
       </header>
       <h1>{title}</h1>
@@ -69,3 +72,5 @@ export default ({ children, title }) => {
     </div>
   );
 };
+
+export default Layout;
